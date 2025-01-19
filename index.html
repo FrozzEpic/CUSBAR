@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cusbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#" class="navbar-logo">Logo</a> <!-- Make the logo a clickable link to Home -->
+        <div class="navbar-search">
+            <input type="text" placeholder="Search">
+        </div>
+        <ul class="nav-links">
+            <li><a href="login.html">Login</a></li>    <!-- Link to Login page in login folder -->
+            <li><a href="signup.html">Sign Up</a></li> <!-- Link to Sign Up page in signup folder -->
+        </ul>
+        
+    </header>
+
+    <!-- Content continues... -->
+    <!-- Landing Page -->
+    <section class="landing-page">
+        <div class="slides">
+            <div class="slide" style="background-image: url('slide1.jpg');">
+                <h1>Landing Page 1</h1>
+                <p>Welcome to our website!</p>
+            </div>
+            <div class="slide" style="background-image: url('slide2.jpg');">
+                <h1>Landing Page 2</h1>
+                <p>Explore our services!</p>
+            </div>
+            <div class="slide" style="background-image: url('slide3.jpg');">
+                <h1>Landing Page 3</h1>
+                <p>Join us today!</p>
+            </div>
+            <div class="slide" style="background-image: url('slide4.jpg');">
+                <h1>Landing Page 4</h1>
+                <p>Contact us for more information!</p>
+            </div>
+        </div>
+        <div class="pagination">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+    <!-- Booking Button -->
+    <div class="booking-container">
+        <a href="booking.html" class="booking-button">Booking Now</a>
+    </div>
+</section>
+
+    <!-- Category Section -->
+    <section class="category-section">
+        <h2>KATEGORI</h2>
+        <div class="category-grid">
+            <!-- Repeat category items as needed -->
+            <div class="category-item">
+                <div class="category-icon">[IMG]</div>
+                <p>Category 1</p>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">[IMG]</div>
+                <p>Category 2</p>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">[IMG]</div>
+                <p>Category 3</p>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">[IMG]</div>
+                <p>Category 4</p>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">[IMG]</div>
+                <p>Category 5</p>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">[IMG]</div>
+                <p>Category 6</p>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">[IMG]</div>
+                <p>Category 7</p>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">[IMG]</div>
+                <p>Category 8</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Around You Section -->
+    <section class="best-around">
+        <h2>TERBAIK DISEKITAR ANDA</h2>
+        <div class="promo-input">
+            <input type="text" placeholder="Masukkan Kode Promo...">
+        </div>
+        <div class="filter-options">
+            <label><input type="radio" name="filter"> Urutkan 1</label>
+            <label><input type="radio" name="filter"> Urutkan 2</label>
+            <label><input type="radio" name="filter"> Urutkan 3</label>
+            <label><input type="radio" name="filter"> Urutkan 4</label>
+            <label><input type="radio" name="filter"> Urutkan 5</label>
+        </div>
+        <div class="best-item-list">
+            <!-- Repeat best item blocks as needed -->
+            <div class="best-item">
+                <div class="best-item-image">[IMG]</div>
+                <p class="best-item-text">Item 1 description goes here</p>
+                <button class="btn">Button</button>
+            </div>
+            <div class="best-item">
+                <div class="best-item-image">[IMG]</div>
+                <p class="best-item-text">Item 2 description goes here</p>
+                <button class="btn">Button</button>
+            </div>
+            <div class="best-item">
+                <div class="best-item-image">[IMG]</div>
+                <p class="best-item-text">Item 3 description goes here</p>
+                <button class="btn">Button</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="homescreen-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berikan Penilaian</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .logo {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        header .profile {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .details {
+            flex: 1;
+            background-color: #f0f3f7;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .details p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .feedback {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .feedback-section {
+            background-color: #f0f3f7;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .feedback-section h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .feedback-section textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+        }
+
+        .feedback-section .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .feedback-section .rating span {
+            font-size: 20px;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .feedback-section .rating span:hover,
+        .feedback-section .rating span.active {
+            color: #f39c12;
+        }
+
+        .submit {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .submit button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="home-button">Logo</a>
+        <div class="profile"></div>
+    </header>
+    <main>
+        <div class="title">BERIKAN PENILAIAN</div>
+        <div class="container">
+            <div class="details">
+                <h2>RINCIAN TUKANG CUKUR</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies facilisis felis, non eleifend erat tempus non.</p>
+                <p>Nulla vel turpis at neque auctor accumsan. Fusce ut ex ut ligula scelerisque dapibus.</p>
+            </div>
+            <div class="feedback">
+                <div class="feedback-section">
+                    <h3>PENILAIAN TUKANG CUKUR</h3>
+                    <textarea placeholder="Tulis penilaian Anda..."></textarea>
+                    <div class="rating">
+                        <span>&hearts;</span>
+                        <span>&hearts;</span>
+                        <span>&hearts;</span>
+                        <span>&hearts;</span>
+                        <span>&hearts;</span>
+                    </div>
+                </div>
+                <div class="feedback-section">
+                    <h3>PENILAIAN UNTUK WEBSITE</h3>
+                    <textarea placeholder="Tulis penilaian Anda..."></textarea>
+                    <div class="rating">
+                        <span>&hearts;</span>
+                        <span>&hearts;</span>
+                        <span>&hearts;</span>
+                        <span>&hearts;</span>
+                        <span>&hearts;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submit">
+            <button>KIRIM TANGGAPAN</button>
+        </div>
+    </main>
+</body>
+</html>

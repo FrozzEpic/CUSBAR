@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran</title>
+  <link rel="stylesheet" href="payment-styles.css">
+  <style>
+    /* Modal styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1000; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .modal-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .modal-content button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .modal-content button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Logo</div>
+      <div class="profile-icon"></div>
+    </header>
+    <main>
+      <h1>PEMBAYARAN</h1>
+      <div class="content">
+        <div class="booking-details">
+          <h2>RINCIAN BOOKING</h2>
+          <div class="details">
+            <div class="detail-line"></div>
+            <div class="detail-line"></div>
+            <div class="detail-line"></div>
+            <div class="detail-line"></div>
+            <div class="detail-line"></div>
+            <div class="detail-line"></div>
+          </div>
+        </div>
+        <div class="payment-options">
+          <div class="option">
+            <input type="radio" id="googlepay" name="payment" value="googlepay">
+            <label for="googlepay">Google Pay</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="applepay" name="payment" value="applepay" checked>
+            <label for="applepay">Apple Pay</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="creditcard" name="payment" value="creditcard">
+            <label for="creditcard">Credit Card</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="dana" name="payment" value="dana">
+            <label for="dana">Dana</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="wallet" name="payment" value="wallet">
+            <label for="wallet">Wallet Balance</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="cash" name="payment" value="cash">
+            <label for="cash">Cash</label>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <button id="payButton">BAYAR SEKARANG</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Konfirmasi Pembayaran</h2>
+      <p>Apakah Anda yakin ingin melanjutkan pembayaran?</p>
+      <button id="confirmButton">Konfirmasi</button>
+    </div>
+  </div>
+
+  <script src="payment-script.js"></script>
+</body>
+</html>

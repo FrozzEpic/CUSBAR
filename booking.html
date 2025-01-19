@@ -1,0 +1,102 @@
+<!-- booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Now</title>
+    <link rel="stylesheet" href="booking-styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="logo">
+            <a href="index.html" class="home-button">Logo</a>
+            <button style="background-color: #4a4a8f; color: white; border-radius: 50%; width: 30px; height: 30px; cursor: default;"></button>
+        </div>
+        
+        <div class="header">BOOKING NOW</div>
+        
+        <!-- Section: Tentukan Lokasi -->
+        <div class="section-title">Tentukan Lokasi</div>
+        <div class="content-section">
+            <div class="form-group">
+                <div class="select-box">
+                    Pilih Lokasi Terdekat
+                    <select>
+                        <option value="1">Lokasi 1</option>
+                        <option value="2">Lokasi 2</option>
+                        <option value="3">Lokasi 3</option>
+                    </select>
+                </div>
+                <div class="map-box">
+                    Cari Di Peta
+                    <div style="border: 1px dashed #888; height: 150px; margin-top: 10px; display: flex; align-items: center; justify-content: center;">
+                        Peta
+                    </div>
+                    <button style="margin-top: 10px; padding: 8px 12px; background-color: #4a4a8f; color: white; border: none; border-radius: 4px;">Gunakan Lokasi</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Atur Waktu Cukur -->
+        <div class="section-title">Atur Waktu Cukur</div>
+        <div class="content-section">
+            <input type="date" placeholder="Tanggal">
+            <select>
+                <option>Pilih Waktu</option>
+                <option>08:00 - 10:00</option>
+                <option>10:00 - 12:00</option>
+                <option>12:00 - 14:00</option>
+            </select>
+        </div>
+
+        <!-- Section: Pilih Layanan -->
+        <div class="section-title">Pilih Layanan</div>
+        <div class="content-section service-cards">
+            <div class="service-card">
+                <img src="https://via.placeholder.com/80" alt="Service 1">
+                <div class="name">Layanan 1</div>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/80" alt="Service 2">
+                <div class="name">Layanan 2</div>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/80" alt="Service 3">
+                <div class="name">Layanan 3</div>
+            </div>
+        </div>
+
+        <!-- Section: Tambahkan Keterangan -->
+        <div class="section-title">Tambahkan Keterangan</div>
+        <div class="content-section">
+            <textarea placeholder="Tambahkan keterangan tambahan..."></textarea>
+        </div>
+
+        <!-- Section: Pilih Tukang Cukur -->
+        <div class="section-title">Pilih Tukang Cukur</div>
+        <div class="content-section barber-cards">
+            <div class="barber-card">
+                <img src="https://via.placeholder.com/80" alt="Barber 1">
+                <div class="name">Tukang Cukur 1</div>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="barber-card">
+                <img src="https://via.placeholder.com/80" alt="Barber 2">
+                <div class="name">Tukang Cukur 2</div>
+                <div class="rating">★★★★☆</div>
+            </div>
+            <div class="barber-card">
+                <img src="https://via.placeholder.com/80" alt="Barber 3">
+                <div class="name">Tukang Cukur 3</div>
+                <div class="rating">★★★★☆</div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+    <div class="center-container">
+        <a href="payment.html" class="home-button submit-btn">Konfirmasi Booking</a>
+    </div>
+</body>
+</html>
